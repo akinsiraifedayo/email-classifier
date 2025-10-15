@@ -1,0 +1,114 @@
+# =========================================
+# Python / project
+# =========================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+env.bak/
+venv.bak/
+
+# =========================================
+# Runtime / app artifacts
+# =========================================
+*.log
+*.sqlite3
+*.db
+*.db-journal
+
+# Persisted ML artifacts / model caches
+*.joblib
+*.pkl
+*.npz
+*.pt
+*.bin
+model_cache/
+hf_cache/
+
+# =========================================
+# Secrets and environment files
+# =========================================
+# NEVER commit your .env or keys
+.env
+.env.*      # e.g. .env.dev, .env.local
+secrets.json
+credentials/
+*.pem
+*.key
+*.crt
+*.p12
+aws_credentials
+aws_secret
+
+# =========================================
+# Editor / OS
+# =========================================
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+Thumbs.db
+
+# =========================================
+# Jupyter / notebooks
+# =========================================
+.ipynb_checkpoints
+*.ipynb
+
+# =========================================
+# Docker / containers
+# =========================================
+docker-compose.override.yml
+Dockerfile.dev
+.dockerignore
+
+# =========================================
+# Other
+# =========================================
+*.tgz
+*.bak
+*.swp
