@@ -1,0 +1,19 @@
+services:
+  email_tagger:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: email_tagger
+    env_file:
+      - .env
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+    volumes:
+      - ./model_cache:/home/appuser/.cache/huggingface
+      - ./trained_models:/app
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
